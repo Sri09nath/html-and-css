@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EPAM Login</title>
+    
+</head>
+<style>
+    .screen{
+    margin:200px;
+    border:1px solid;
+    border-radius: 10px;
+    
+}
+.nav,.login,.othersigin,.forgot
+{
+    margin: 5px;;
+    display: flex;
+}
+.nav{
+    justify-content: space-between;
+    background-color: #095E96;
+    color: white;
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    
+}
+.login{
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 5px; 
+}
+#signin{
+    background-color:#095E96;
+    color:white;
+    font-weight: bold;
+    border-radius: 10px;
+    border-style: none;
+}
+
+.reg{
+align-items: flex-end;
+}
+.othersigin{
+   flex-direction: column;
+   justify-content: space-around;
+}
+.home{
+   height:25px;
+   max-width: 100%;
+}
+.close{
+   padding-top: 2px;
+   height:20px;
+   max-width: 100%;
+}
+#image{
+    height:25px;
+    max-width: 100%;
+    border-style: none;
+    background-color:#98E923; 
+    border-radius: 10px;
+    font-weight: bolder;
+    color: white;
+}
+#image-fb{
+    height:25px;
+    max-width: 100%;
+    border-style: none;
+    background-color:rgb(9, 157, 243);
+    border-radius: 10px;
+}
+
+#image-g{
+    height:25px;
+    max-width: 100%;
+    border-style: none;
+    background-color:rgb(233, 65, 35);
+    border-radius: 10px;
+    
+}
+</style>
+<body>
+<div class="screen">
+    <div class="nav">
+        <img class="home" src="./epam.png">
+        <span>Sign in</span>
+        <img class="close" src="./iconfinder_icon-close-round_211651.png"></button>
+    </div>
+    <div class="login">
+        <input type="text" placeholder="Enter Username"><br>
+        <input type="password" placeholder="Enter Password"><br>
+        <input type="button" id="signin" value="Sign in">
+    </div>
+    <div class="forgot">
+        <a href="#">Forgot your password?</a>
+        <a href="#" class="reg">Register!</a>
+    </div> 
+    <div>
+        ________________________________________________________ OR ________________________________________________________
+        
+    </div><br>
+    <div class="othersigin">
+        <input type="image" id="image-fb" alt="image" src="./iconfinder_4-Facebook_3377045.svg"><br>
+        <input type="image" id="image-g" alt="image" src="./iconfinder_21-Gmail_3377042.svg"><br>
+        <input type="button" id="image" value="<EPAM LOGIN>" >
+    </div>
+</div>
+</body>
+</html>
